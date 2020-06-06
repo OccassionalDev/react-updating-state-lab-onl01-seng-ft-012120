@@ -7,6 +7,13 @@ class DigitalClicker extends React.Component {
       timesClicked: 0
     }
   }
+  
+  updateClickCount = () => {
+    this.setState(previousState => {
+      ...this.previousState,
+      
+    })
+  }
 }
 
 export default DigitalClicker
