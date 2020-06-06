@@ -8,12 +8,19 @@ class DigitalClicker extends React.Component {
     }
   }
   
-  updateClickCount = () => {
+  handleClick = () => {
         this.setState(previousState => {
       return {
         timesClicked: previousState.count + 1
       }
     })
+  }
+  
+  render() {
+    return (
+      <button onClick={ this.handleClick }>Button</button>
+      
+      )
   }
 }
 
